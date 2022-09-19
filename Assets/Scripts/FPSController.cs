@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class FPSController : MonoBehaviour
 {
-    [SerializeField] private Vector3 velocity;
-    // 移動方向
-    [SerializeField] private float moveSpeed = 0.01f;
+    public int moveSpeed = 1;
     // 移動速度
+    private Vector3 velocity;
+    // 移動方向
 
     public GameObject mainCamera;
 

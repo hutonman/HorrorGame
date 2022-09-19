@@ -3,7 +3,7 @@ using UnityEngine;
 
 // プレイヤー追従カメラ
 public class CameraController : MonoBehaviour {
-    [SerializeField] private float sensitiveRotate = 1.0f;
+    public int rotationSensitivity = 1;
 
     private float rotateX = 0.0f;
     private float rotateY = 0.0f;
@@ -14,8 +14,8 @@ public class CameraController : MonoBehaviour {
 
     void Update ()
     {
-        rotateX += Input.GetAxis("Mouse X") * sensitiveRotate;
-        rotateY += Input.GetAxis("Mouse Y") * sensitiveRotate;
+        rotateX += Input.GetAxis("Mouse X") * rotationSensitivity;
+        rotateY += Input.GetAxis("Mouse Y") * rotationSensitivity;
         if (rotateY >= 65) rotateY = 65;
         if (rotateY <= -65) rotateY = -65;
         Debug.Log(rotateY);
