@@ -13,6 +13,10 @@ public class CameraController : MonoBehaviour {
 
     void Update ()
     {
+        //カーソル非表示＆ロック
+        Cursor.lockState = CursorLockMode.Locked;
+
+        //マウスでのカメラ操作
         rotateX += Input.GetAxis("Mouse X") * rotationSensitivity;
         rotateY += Input.GetAxis("Mouse Y") * rotationSensitivity;
         if (rotateY >= MaxAngle) rotateY = MaxAngle;
