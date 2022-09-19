@@ -11,12 +11,6 @@ public class FPSController : MonoBehaviour
 
     public GameObject mainCamera;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         //カメラ方向に身体を向ける
