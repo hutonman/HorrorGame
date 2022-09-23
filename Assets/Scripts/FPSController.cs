@@ -14,7 +14,9 @@ public class FPSController : MonoBehaviour
     void Update()
     {
         //カメラ方向に身体を向ける
-        transform.rotation = mainCamera.transform.rotation;
+        Quaternion cameraAngle = mainCamera.transform.rotation;
+        cameraAngle[0] = 0; 
+        transform.rotation = cameraAngle;
 
         // 左に移動
         if (Input.GetKey (KeyCode.A)) {
