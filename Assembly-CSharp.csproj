@@ -41,6 +41,10 @@
      <Compile Include="Assets\Scripts\RayCaster.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Clickable.cs" />
+     <Compile Include="Assets\FurnishedCabin\Scripts\Player\PlayerLook.cs" />
+     <Compile Include="Assets\FurnishedCabin\Scripts\Player\PlayerMove.cs" />
+     <Compile Include="Assets\FurnishedCabin\Scripts\MoveableObject.cs" />
+     <Compile Include="Assets\FurnishedCabin\Scripts\MoveObjectController.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

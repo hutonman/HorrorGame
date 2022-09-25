@@ -25,6 +25,7 @@ public class RayCaster : MonoBehaviour
             if(Physics.Raycast(ray, out hit, 1))
             {
                 target = hit.collider.gameObject;
+                Debug.Log(target);
                 if(target.GetComponent<Clickable>() != null) {
                     target.GetComponent<Clickable>().Clicked(target);
                 }
